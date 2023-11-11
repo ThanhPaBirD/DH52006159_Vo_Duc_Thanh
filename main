@@ -1,12 +1,35 @@
 #include<iostream>
 using namespace std;
+bool KTHT(int n) {
+	int s = 0;
+	for (int i = 1; i < n; i++)
+	{
+		if (n%i==0)
+		{
+			S += i;
+		}
+	}
+	if (s==n)
+	{
+		return true;
+	}
+	return false;
+}
 
 void main(){
 
     int x;
     cout <<"\nnhap so nguyen x: ";
     cin>>x;
-	
+bool kqKTHT = KTHT(x);
+	if (kqKTHT==true)
+	{
+		cout << x << " la so hoan thien!";
+	}
+	else
+	{
+		cout << x << " khong la so hoan tien !";
+	}
 	
     system("pause");
 }
